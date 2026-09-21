@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<ApplicationIcon>Images\Default\Iscale.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Images\Avatars\admin.png" />
+	  <None Remove="Images\Avatars\operator.png" />
+	  <None Remove="Images\Default\app_icon.png" />
+	  <None Remove="Images\Default\app_logo.png" />
+	  <None Remove="Images\Icons\check.png" />
+	  <None Remove="Images\Icons\close.png" />
+	  <None Remove="Images\Icons\cog.png" />
+	  <None Remove="Images\Icons\failed.png" />
+	  <None Remove="Images\Icons\max.png" />
+	  <None Remove="Images\Icons\min.png" />
+	  <None Remove="Images\Icons\success.png" />
+	  <None Remove="Images\Icons\timer.png" />
+	  <None Remove="Images\Icons\x.png" />
+	  <None Remove="Sounds\failed.wav" />
+	  <None Remove="Sounds\success.wav" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="Images\Default\Iscale.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Sounds\failed.wav" />
+	  <EmbeddedResource Include="Sounds\success.wav" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ClosedXML" Version="0.105.0" />
+		<PackageReference Include="Formatter" Version="1.0.5" />
+		<PackageReference Include="LiveWeightScale" Version="1.4.8" />
+		<PackageReference Include="Microsoft.Data.Sqlite.Core" Version="7.0.20" />
+		<PackageReference Include="MVVMCORE" Version="1.0.0" />
+		<PackageReference Include="NAudio" Version="2.2.1" />
+		<PackageReference Include="SQLitePCLRaw.bundle_e_sqlcipher" Version="2.1.11" />
+		<PackageReference Include="Theme" Version="1.2.11" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="Images\Avatars\admin.png" />
+	  <Resource Include="Images\Avatars\operator.png" />
+	  <Resource Include="Images\Default\app_icon.png" />
+	  <Resource Include="Images\Default\app_logo.png" />
+	  <Resource Include="Images\Icons\check.png" />
+	  <Resource Include="Images\Icons\close.png" />
+	  <Resource Include="Images\Icons\cog.png" />
+	  <Resource Include="Images\Icons\failed.png" />
+	  <Resource Include="Images\Icons\max.png" />
+	  <Resource Include="Images\Icons\min.png" />
+	  <Resource Include="Images\Icons\success.png" />
+	  <Resource Include="Images\Icons\timer.png" />
+	  <Resource Include="Images\Icons\x.png" />
+	</ItemGroup>
+</Project>

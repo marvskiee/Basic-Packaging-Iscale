@@ -1,0 +1,34 @@
+﻿<Window x:Class="ISCALE.MVVM.View.ModalViews.ModalResultView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ISCALE.MVVM.View.ModalViews"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize" WindowStyle="None"
+        Title="ResultModal" Height="230" Width="300" KeyDown="Window_KeyDown">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10 10 10 5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition />
+            <RowDefinition Height="80"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image Source="{Binding ImagePath, RelativeSource={RelativeSource AncestorType=Window}}" Width="50" Height="50" Margin="0 0 0 5"/>
+        <TextBlock Grid.Row="1" FontWeight="SemiBold" FontSize="19" x:Name="LBL_TITLE" TextAlignment="Center" Padding="5 0" Text="{Binding HeaderTitle, RelativeSource={RelativeSource AncestorType=Window}}"/>
+        <TextBlock Grid.Row="2" VerticalAlignment="Center"
+       FontSize="14"
+       Foreground="{StaticResource MediumGrayBrush}"
+       TextWrapping="Wrap"
+       Width="250"
+       Height="55"  
+       x:Name="LBL_BODY"
+       TextAlignment="Center" 
+       Padding="5"
+       Margin="0 0 0 5"
+       Text="{Binding Body, RelativeSource={RelativeSource AncestorType=Window}}" />
+
+        <Button Grid.Row="3" x:Name="BtnClose" Content="Close [Enter]" Style="{StaticResource BlackButton_patched}" Click="BTN_CLOSE_Click" />
+    </Grid>
+</Window>

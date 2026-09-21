@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:view="clr-namespace:ISCALE.MVVM.View.AdminViews"
+                    xmlns:vm="clr-namespace:ISCALE.MVVM.ViewModel.AdminVMS"
+                    >
+    <DataTemplate DataType="{x:Type vm:AdminUserVM}">
+        <view:AdminUserView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AdminProductVM}">
+        <view:AdminProductView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AdminTransactionVM}">
+        <view:AdminTransactionView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AdminChangePasswordVM}">
+        <view:AdminChangePasswordView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AdminShiftScheduleVM}">
+        <view:AdminShiftScheduleView/>
+    </DataTemplate>
+</ResourceDictionary>

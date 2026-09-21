@@ -1,0 +1,102 @@
+﻿<Window x:Class="ISCALE.MVVM.View.OperatorViews.WeigherView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        xmlns:local="clr-namespace:ISCALE.MVVM.View.OperatorViews"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        xmlns:control="clr-namespace:ISCALE.MVVM.View.ControlViews"
+        Title="WeigherView" Height="500" Width="730"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        Style="{StaticResource PrimaryWindow}"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <control:ControlWindowHeaderView HasNoResize="True"/>
+        
+        <StackPanel Margin="40" Grid.Row="1" x:Name="FORM_SETUP">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="150"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Setup Form" FontSize="25" FontWeight="Medium" VerticalAlignment="Center"/>
+                <Button Content="Recover Form" Grid.Column="1" Style="{StaticResource WhiteButton_patched}" Margin="5 0 0 0" x:Name="BTN_RECOVER" Click="BTN_RECOVER_Click"/>
+            </Grid>
+            <TextBlock Text="Please fill up the fields below" TextAlignment="Center" FontSize="16" FontWeight="Regular" Margin="0 20" Foreground="{StaticResource DarkGrayBrush}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Margin="0 0 5 0">
+                    <TextBlock Text="Weighing Scale #"/>
+                    <TextBox Margin="0 10 0 15" x:Name="TBX_SCALE_NO" TextChanged="TBX_SCALE_NO_TextChanged" KeyDown="TBX_SCALE_NO_KeyDown"/>
+                </StackPanel>
+                <StackPanel Margin="5 0 0 0"  Grid.Column="1">
+                    <TextBlock Text="Weigher Name"/>
+                    <TextBox Margin="0 10 0 15" x:Name="TBX_WEIGHER_NAME" TextChanged="TBX_WEIGHER_NAME_TextChanged" KeyDown="TBX_WEIGHER_NAME_KeyDown"/>
+                </StackPanel>
+            </Grid>
+            <Button Content="Confirm" VerticalAlignment="Bottom" Style="{StaticResource BlackButton_patched}" Margin="0 0 0 15" Width="120" HorizontalAlignment="Right" x:Name="BTN_CONFIRM" Click="BTN_CONFIRM_Click"/>
+        </StackPanel>
+
+        <Grid Margin="40" Grid.Row="1" x:Name="FORM_RECOVER" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Margin="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="150"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Recover Form" FontSize="25" FontWeight="Medium" VerticalAlignment="Center"/>
+                <Button Content="Setup Form" Grid.Column="1" Style="{StaticResource WhiteButton_patched}" Margin="5 0 0 0" x:Name="BTN_SETUP" Click="BTN_SETUP_Click"/>
+            </Grid>
+            <TextBlock Grid.Row="1" Text="Below is a list of recent transactions handled by the supervisor." TextAlignment="Center" FontSize="16" FontWeight="Regular" Margin="0 20" Foreground="{StaticResource DarkGrayBrush}"/>
+            <DataGrid Grid.Row="2" Name="DG_TRANSACTION_ITEM"  ItemsSource="{Binding CurrentTransaction.TransactionItems}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Weigher" Width=".26*" Binding="{Binding Weigher}">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Margin" Value="5"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+
+                    <DataGridTextColumn Header="Item" Width=".26*" Binding="{Binding Item.Code}">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Margin" Value="5"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    
+                    <DataGridTextColumn Header="Count" Width=".14*" Binding="{Binding TotalCount}">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Margin" Value="5"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Date Created" Width=".26*" Binding="{Binding DateCreatedString}"/>
+                    <DataGridTemplateColumn Header="Action" Width="80">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Style="{StaticResource BlackButton}"  Content="Select" x:Name="BTN_SELECT" Click="BTN_SELECT_Click"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Window>

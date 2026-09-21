@@ -1,0 +1,65 @@
+﻿<Window x:Class="ISCALE.MVVM.View.OperatorViews.ModalView.OperatorSettingModalView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ISCALE.MVVM.View.OperatorViews.ModalView"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Title="OperatorSettingModalView" Height="250" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!-- Form Scale Layout-->
+        <TextBlock Text="Settings" Margin="10 0 10 0" FontWeight="SemiBold" VerticalAlignment="Center" FontSize="20"/>
+        <Button Margin="10" HorizontalAlignment="Right" Content="🗙" 
+        Style="{StaticResource WhiteButton_patched}" Width="30" Height="30"  Command="{Binding CloseCommand}" Background="White" FontSize="18"/>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Background="{StaticResource WhiteBrush}">
+                <StackPanel Margin="10 0 10 10" Orientation="Vertical" Background="{StaticResource WhiteBrush}">
+                    <TextBlock Text="Weighing Scale" FontWeight="SemiBold" FontSize="16"/>
+                    <TextBlock
+              Padding="7"
+                        Margin="4"
+              Style="{Binding SettingResultStyle}"
+              Text="{Binding SettingResult}"
+              FontFamily="{StaticResource Medium}"
+          />
+                    <!-- First Row-->
+                    <Grid Margin="0 0 0 5">
+                        <!--First Row Layout-->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <!-- First Row Content-->
+                        <StackPanel Orientation="Vertical" Margin="0 5">
+                            <TextBlock Text="Com Port" Margin="0 0 0 5"/>
+                            <ComboBox
+                                Background="#F4F5F7"
+                          
+                                   ItemsSource= "{Binding ComPortList}"
+                                   SelectedItem= "{Binding ScaleComport, Mode=TwoWay}" Style="{DynamicResource ComboBoxStyle1}" />
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid Grid.Column="2" Margin="0 0 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Content="Save" Style="{StaticResource BlackButton_patched}" Margin="0 0 7.5 0" Command="{Binding SaveCommand}"/>
+                        <Button Grid.Column="1" Content="Cancel" Style="{StaticResource WhiteButton_patched}" Margin="7.5 0 0 0" Command="{Binding CancelCommand}"/>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
