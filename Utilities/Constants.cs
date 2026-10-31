@@ -9,7 +9,7 @@ namespace ISCALE.Utilities
     {
         
         public static readonly bool DEMO = false;
-        public static readonly string APP_VERSION = "1.3.0";
+        public static readonly string APP_VERSION = "1.3.1";
         
         // APPDATA DIRECTORIES
         public static readonly string[] ADMIN_APPDATA = { "\\Logs", "\\Reports"};

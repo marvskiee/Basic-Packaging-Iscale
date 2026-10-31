@@ -83,6 +83,8 @@ namespace ISCALE.MVVM.ViewModel
             }
         }
 
+        private bool _isScaleStarted = false;
+
         private string _scaleTimer;
         public string ScaleTimer
         {
@@ -238,7 +240,7 @@ namespace ISCALE.MVVM.ViewModel
         public RelayCommand DeleteCommand => new RelayCommand(Delete);
         public RelayCommand AddCommand => new RelayCommand(Add);
         public RelayCommand LogoutCommand => new RelayCommand(Logout);
-        public RelayCommand SettingCommand => new RelayCommand(OpenSetting);
+        public RelayCommand SettingCommand => new RelayCommand(OpenSetting, CanOpenSetting);
         public RelayCommand StartScaleCommand => new RelayCommand(StartScale, CanStartScale);
         public RelayCommand DemoCaptureCommand => new RelayCommand(DemoCapture, CanDemoCapture);
         #endregion
@@ -320,20 +322,37 @@ namespace ISCALE.MVVM.ViewModel
             {
                 SerialData = "0";
             });
+            _isScaleStarted = false;
+
             if (Constants.DEMO) return;
             _scaleVM.CloseSerialPort();
         }
         private async void Finish(object parameter)
         {
-            if (CurrentTransaction.TransactionItems.Where(x => x.IsDeleted == true).Count() > 0)
-                await ProcessDelete();
-            else
-                await FinishTransaction();
+            // Stop scale here
+            try
+            {
+                if (!Constants.DEMO)
+                    _scaleVM.CloseSerialPort();
+
+                if (CurrentTransaction.TransactionItems.Where(x => x.IsDeleted == true).Count() > 0)
+                    await ProcessDelete();
+                else
+                    await FinishTransaction();
+
+            }
+            catch (Exception ex)
+            {
+                FileHelper.CatchSystemError(ex);
+            }
+          
+
         }
 
 
         private void OpenSetting(object parameter)
         {
+            bool _isFormNotEnabled = !IsFormEnabled;
             FileHelper.DisableWindow();
             OperatorSettingModalVM dialogVM = new(ScaleComport);
             OperatorSettingModalView dialog = new()
@@ -341,17 +360,20 @@ namespace ISCALE.MVVM.ViewModel
                 DataContext = dialogVM,
                 Owner = Application.Current.MainWindow
             };
-            bool _isFormNotEnabled = !IsFormEnabled;
-            if (_isFormNotEnabled && !Constants.DEMO)
+            
+            // close port first
+            if (_isScaleStarted && !Constants.DEMO)
                 _scaleVM.CloseSerialPort();
 
+            // get next action
             dialogVM.CloseAction = (result) => dialog.DialogResult = result;
             bool? result = dialog.ShowDialog();
-            if (_isFormNotEnabled && !Constants.DEMO)
-            {
-                _scaleComport = dialogVM.ScaleComport;
+
+            // set up again the port if started
+            // start port if scale started
+            _scaleComport = dialogVM.ScaleComport;
+            if(_isScaleStarted && !Constants.DEMO) 
                 _scaleVM.InitializedPort();
-            }
 
             FileHelper.EnableWindow();
         }
@@ -363,6 +385,11 @@ namespace ISCALE.MVVM.ViewModel
         #endregion
 
         #region CanCommand
+
+        private bool CanOpenSetting(object parameter) {
+            return !Constants.DEMO;
+        }
+
         private bool CanDemoCapture(object parameter)
         {
             return Constants.DEMO;
@@ -500,7 +527,7 @@ namespace ISCALE.MVVM.ViewModel
                 ScaleVisibility = Visibility.Visible;
                 TableVisibility = Visibility.Visible;
                 IsFormEnabled = false;
-
+                _isScaleStarted = true;
                 _scaleVM.SelectedItem = CurrentTransaction.Item;
 
                 if (Constants.DEMO) return;
@@ -535,7 +562,11 @@ namespace ISCALE.MVVM.ViewModel
                 await FinishTransaction();
             }
             else
+            {
                 FileHelper.EnableWindow();
+                if (!Constants.DEMO)
+                    _scaleVM.InitializedPort();
+            }
         }
         private async Task FinishTransaction()
         {
@@ -697,8 +728,13 @@ namespace ISCALE.MVVM.ViewModel
 
         protected override void OnFormClose()
         {
-            if (Constants.DEMO) return;
-            _scaleVM.CloseSerialPort();
+            if (_isScaleStarted && !Constants.DEMO)
+                _scaleVM.CloseSerialPort();
+        }
+
+        protected override void OnLogoutCancel() {
+            if (_isScaleStarted && !Constants.DEMO)
+                _scaleVM.InitializedPort();
         }
 
         private void InitVisibility()

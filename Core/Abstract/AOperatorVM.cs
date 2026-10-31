@@ -41,6 +41,7 @@ namespace ISCALE.Core.Abstract
         {
             try
             {
+                OnFormClose();
                 FileHelper.DisableWindow();
                 ModalConfirmationVM dialogVM = new ModalConfirmationVM("Logout", "Are you sure you want to logout?");
                 ModalConfirmationView dialog = new ModalConfirmationView
@@ -54,7 +55,6 @@ namespace ISCALE.Core.Abstract
 
                 if (result == true)
                 {
-
                     ModalResultView resultModalView = new ModalResultView(Application.Current.MainWindow, "loading", "Logging out...");
                     resultModalView.Show();
 
@@ -67,8 +67,10 @@ namespace ISCALE.Core.Abstract
                     Application.Current.MainWindow = loginView;
                 }
                 else
+                {
+                    OnLogoutCancel();
                     FileHelper.EnableWindow();
-
+                }
             }
             catch (Exception ex)
             {
@@ -76,6 +78,7 @@ namespace ISCALE.Core.Abstract
             }
         }
         protected abstract void OnFormClose();
+        protected abstract void OnLogoutCancel();
         private void OnApplicationExit(object sender, ExitEventArgs e)
         {
             OnFormClose();

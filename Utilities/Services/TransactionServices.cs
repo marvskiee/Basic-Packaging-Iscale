@@ -372,7 +372,7 @@ namespace ISCALE.Utilities.Services
                 {
                     var filters = new List<string>
                     {
-                        "tt.CreatedAt BETWEEN @startDate AND @endDate AND Status = 'completed'",
+                        "tt.CreatedAt BETWEEN @startDate AND @endDate AND DeleteNote IS NOT NULL",
                     };
 
                     if (!string.IsNullOrEmpty(payload.Weigher))

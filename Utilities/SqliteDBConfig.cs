@@ -7,7 +7,7 @@ namespace ISCALE.Utilities
     {
         private static readonly string roaming_folder_path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         private static readonly string app_folder_path = Path.Combine(roaming_folder_path, $"Iscale");
-        private static readonly string db_path = Path.Combine(app_folder_path, "iscale.db");
+        private static readonly string db_path = Path.Combine(app_folder_path, "iscalev2.db");
 
         private static readonly string _connectionString = new SqliteConnectionStringBuilder
         {

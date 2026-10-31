@@ -7,14 +7,6 @@
       "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:utilities\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\mvvm\\view\\modalviews\\modaltransactionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:mvvm\\view\\modalviews\\modaltransactionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\mvvm\\view\\operatorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:mvvm\\view\\operatorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
@@ -23,8 +15,40 @@
       "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:mvvm\\viewmodel\\operatorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\mvvm\\viewmodel\\operatorvms\\modalvm\\operatorsettingmodalvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:mvvm\\viewmodel\\operatorvms\\modalvm\\operatorsettingmodalvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\mvvm\\view\\operatorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:mvvm\\view\\operatorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\mvvm\\viewmodel\\operatorvms\\componentvm\\scalevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:mvvm\\viewmodel\\operatorvms\\componentvm\\scalevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\core\\abstract\\aoperatorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:core\\abstract\\aoperatorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\mvvm\\viewmodel\\adminvms\\adminproductvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:mvvm\\viewmodel\\adminvms\\adminproductvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\utilities\\sqlitedbconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:utilities\\sqlitedbconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\utilities\\services\\transactionservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:utilities\\services\\transactionservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\mvvm\\viewmodel\\adminvms\\admintransactionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:mvvm\\viewmodel\\adminvms\\admintransactionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\mvvm\\view\\modalviews\\modaltransactionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:mvvm\\view\\modalviews\\modaltransactionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\mvvm\\view\\operatorviews\\weigherview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -39,20 +63,12 @@
       "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:mvvm\\model\\servicemodel\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\mvvm\\viewmodel\\adminvms\\admintransactionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:mvvm\\viewmodel\\adminvms\\admintransactionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\mvvm\\view\\operatorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:mvvm\\view\\operatorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\utilities\\services\\scheduleservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:utilities\\services\\scheduleservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|d:\\marvs\\works\\sir chua\\clients\\basic packaging\\iscale\\mvvm\\viewmodel\\adminvms\\adminproductvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B92AF3-15F2-4415-9E7D-A26C8E127DB1}|ISCALE.csproj|solutionrelative:mvvm\\viewmodel\\adminvms\\adminproductvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,49 +78,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ModalTransactionView.xaml",
-              "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\View\\ModalViews\\ModalTransactionView.xaml",
-              "RelativeDocumentMoniker": "MVVM\\View\\ModalViews\\ModalTransactionView.xaml",
-              "ToolTip": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\View\\ModalViews\\ModalTransactionView.xaml",
-              "RelativeToolTip": "MVVM\\View\\ModalViews\\ModalTransactionView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-09-21T07:46:09.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "README.md",
-              "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AgIAABMAAAAAAAAAAAAIwB8AAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-09-21T07:14:53.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Constants.cs",
-              "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\Utilities\\Constants.cs",
-              "RelativeDocumentMoniker": "Utilities\\Constants.cs",
-              "ToolTip": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\Utilities\\Constants.cs",
-              "RelativeToolTip": "Utilities\\Constants.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ScaleVM.cs",
+              "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\ViewModel\\OperatorVMS\\ComponentVM\\ScaleVM.cs",
+              "RelativeDocumentMoniker": "MVVM\\ViewModel\\OperatorVMS\\ComponentVM\\ScaleVM.cs",
+              "ToolTip": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\ViewModel\\OperatorVMS\\ComponentVM\\ScaleVM.cs",
+              "RelativeToolTip": "MVVM\\ViewModel\\OperatorVMS\\ComponentVM\\ScaleVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T07:13:44.268Z",
+              "WhenOpened": "2026-10-26T09:28:36.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "WeigherView.xaml.cs",
               "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\View\\OperatorViews\\WeigherView.xaml.cs",
               "RelativeDocumentMoniker": "MVVM\\View\\OperatorViews\\WeigherView.xaml.cs",
@@ -117,20 +108,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "OperatorVM.cs",
               "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\ViewModel\\OperatorVM.cs",
               "RelativeDocumentMoniker": "MVVM\\ViewModel\\OperatorVM.cs",
               "ToolTip": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\ViewModel\\OperatorVM.cs",
               "RelativeToolTip": "MVVM\\ViewModel\\OperatorVM.cs",
-              "ViewState": "AgIAAAwBAAAAAAAAAAAMwB8BAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0CAAAAAAAAAAApwC0CAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-21T02:40:15.091Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "Transaction.cs",
               "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\Model\\ServiceModel\\Transaction.cs",
               "RelativeDocumentMoniker": "MVVM\\Model\\ServiceModel\\Transaction.cs",
@@ -143,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "WeigherView.xaml",
               "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\View\\OperatorViews\\WeigherView.xaml",
               "RelativeDocumentMoniker": "MVVM\\View\\OperatorViews\\WeigherView.xaml",
@@ -154,33 +145,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "AdminProductVM.cs",
               "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\ViewModel\\AdminVMS\\AdminProductVM.cs",
               "RelativeDocumentMoniker": "MVVM\\ViewModel\\AdminVMS\\AdminProductVM.cs",
               "ToolTip": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\ViewModel\\AdminVMS\\AdminProductVM.cs",
               "RelativeToolTip": "MVVM\\ViewModel\\AdminVMS\\AdminProductVM.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAgwG4AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAADwv2gAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-21T02:44:16.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TransactionServices.cs",
-              "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\Utilities\\Services\\TransactionServices.cs",
-              "RelativeDocumentMoniker": "Utilities\\Services\\TransactionServices.cs",
-              "ToolTip": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\Utilities\\Services\\TransactionServices.cs",
-              "RelativeToolTip": "Utilities\\Services\\TransactionServices.cs",
-              "ViewState": "AgIAAOEBAAAAAAAAAAAWwOoBAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T03:53:04.619Z",
+              "DocumentIndex": 1,
+              "Title": "README.md",
+              "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-09-21T07:14:53.789Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\Utilities\\Constants.cs",
+              "RelativeDocumentMoniker": "Utilities\\Constants.cs",
+              "ToolTip": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\Utilities\\Constants.cs",
+              "RelativeToolTip": "Utilities\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T07:13:44.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OperatorSettingModalVM.cs",
+              "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\ViewModel\\OperatorVMS\\ModalVM\\OperatorSettingModalVM.cs",
+              "RelativeDocumentMoniker": "MVVM\\ViewModel\\OperatorVMS\\ModalVM\\OperatorSettingModalVM.cs",
+              "ToolTip": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\ViewModel\\OperatorVMS\\ModalVM\\OperatorSettingModalVM.cs",
+              "RelativeToolTip": "MVVM\\ViewModel\\OperatorVMS\\ModalVM\\OperatorSettingModalVM.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAASwCEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T06:29:41.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "OperatorView.xaml",
               "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\View\\OperatorView.xaml",
               "RelativeDocumentMoniker": "MVVM\\View\\OperatorView.xaml",
@@ -193,19 +210,69 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "TransactionServices.cs",
+              "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\Utilities\\Services\\TransactionServices.cs",
+              "RelativeDocumentMoniker": "Utilities\\Services\\TransactionServices.cs",
+              "ToolTip": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\Utilities\\Services\\TransactionServices.cs",
+              "RelativeToolTip": "Utilities\\Services\\TransactionServices.cs",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAAwCYBAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T03:53:04.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SqliteDBConfig.cs",
+              "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\Utilities\\SqliteDBConfig.cs",
+              "RelativeDocumentMoniker": "Utilities\\SqliteDBConfig.cs",
+              "ToolTip": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\Utilities\\SqliteDBConfig.cs",
+              "RelativeToolTip": "Utilities\\SqliteDBConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T04:59:29.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AOperatorVM.cs",
+              "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\Core\\Abstract\\AOperatorVM.cs",
+              "RelativeDocumentMoniker": "Core\\Abstract\\AOperatorVM.cs",
+              "ToolTip": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\Core\\Abstract\\AOperatorVM.cs",
+              "RelativeToolTip": "Core\\Abstract\\AOperatorVM.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAtwE8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T05:43:33.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ModalTransactionView.xaml",
+              "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\View\\ModalViews\\ModalTransactionView.xaml",
+              "RelativeDocumentMoniker": "MVVM\\View\\ModalViews\\ModalTransactionView.xaml",
+              "ToolTip": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\View\\ModalViews\\ModalTransactionView.xaml",
+              "RelativeToolTip": "MVVM\\View\\ModalViews\\ModalTransactionView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-09-21T07:46:09.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AdminTransactionVM.cs",
               "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\ViewModel\\AdminVMS\\AdminTransactionVM.cs",
               "RelativeDocumentMoniker": "MVVM\\ViewModel\\AdminVMS\\AdminTransactionVM.cs",
               "ToolTip": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\ViewModel\\AdminVMS\\AdminTransactionVM.cs",
               "RelativeToolTip": "MVVM\\ViewModel\\AdminVMS\\AdminTransactionVM.cs",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAWwKQAAABzAAAAAAAAAA==",
+              "ViewState": "AgIAANkAAAAAAAAAAAAjwO4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-21T04:40:10.843Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "OperatorView.xaml.cs",
               "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\MVVM\\View\\OperatorView.xaml.cs",
               "RelativeDocumentMoniker": "MVVM\\View\\OperatorView.xaml.cs",
@@ -213,11 +280,12 @@
               "RelativeToolTip": "MVVM\\View\\OperatorView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T04:10:26.144Z"
+              "WhenOpened": "2026-09-21T04:10:26.144Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "ScheduleServices.cs",
               "DocumentMoniker": "D:\\MARVS\\WORKS\\sir chua\\CLIENTS\\Basic Packaging\\ISCALE\\Utilities\\Services\\ScheduleServices.cs",
               "RelativeDocumentMoniker": "Utilities\\Services\\ScheduleServices.cs",

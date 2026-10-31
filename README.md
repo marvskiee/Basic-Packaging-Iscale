@@ -45,3 +45,6 @@
 	### Operator Page
 		+ Lower the capture time 
 		+ Recovery Form
+## Version 1.3.1
+	### Operator Page
+		+ Fix Bug: Disabled scale captured in Logout Modal and Finish Transaction
